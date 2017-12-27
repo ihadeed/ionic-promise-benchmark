@@ -7,8 +7,16 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-label>Number of promises</ion-label>
+    <ion-range [(ngModel)]="numOfPromises" [min]="100" [max]="10000" [step]="100" [pin]="true"></ion-range>
+  </ion-item>
+  <br>
+  <br>
+  <button ion-button block (click)="testBluebird()">Test bluebird parallel</button>
+  <button ion-button block (click)="testBluebirdSeries()">Test bluebird series</button>
+  <button ion-button block (click)="testNative()">Test native parallel</button>
+  <button ion-button block (click)="testNativeSeries()">Test native series</button>
+  <button ion-button block (click)="testAsync()">Test async parallel</button>
+  <button ion-button block (click)="testAsyncSeries()">Test async series</button>
 </ion-content>
