@@ -1,0 +1,8 @@
+{
+  "name": "promise-bench",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
